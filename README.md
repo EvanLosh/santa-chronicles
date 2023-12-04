@@ -24,12 +24,4 @@ This site is where Santa Claus writes his blogs and readers can find them and co
 
 ## WireFrame
 
-![WireFrame](image.png)
-
-## Tree Component
-
-![TreeComponent](image-1.png)
-
-## React Routes Chart
-
-![ReactRoutesChart](image-2.png)
+![Wireframe](image.png)
