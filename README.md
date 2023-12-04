@@ -29,3 +29,7 @@ This site is where Santa Claus writes his blogs and readers can find them and co
 ## Tree Component
 
 ![TreeComponent](image-1.png)
+
+## React Routes Chart
+
+![ReactRoutesChart](image-2.png)
