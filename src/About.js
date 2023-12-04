@@ -1,7 +1,7 @@
 import React from 'react'
 
 function About() {
-    return
+    return <p>This is about.</p>
 }
 
 export default About 

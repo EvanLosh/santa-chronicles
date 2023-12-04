@@ -1,7 +1,7 @@
 import React from 'react'
 
 function NavBar() {
-    return
+    return <p>This is NavBar.</p>
 }
 
 export default NavBar

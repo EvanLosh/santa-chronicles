@@ -1,7 +1,7 @@
 import React from 'react'
 
 function History() {
-    return
+    return <p>This is history.</p>
 }
 
 export default History
