@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 
 function Home() {
     return (
-        <div>
+        <div className="Home">
             <p>This is home.</p>
             <SelectedPost />
             <Sidebar />

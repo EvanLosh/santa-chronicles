@@ -1,41 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.nav-link {
-  padding: 10px;
-}
-
-.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: #e6f2ff; /* Light blue for a snowy feel */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center; /* Center the items */
+  align-items: center; /* Align items vertically */
+  padding: 15px;
+  background-color: #b3000c; /* Rich red for a Christmas feel */
+  color: white;
+  width: 100%;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px; /* Increase spacing between links */
+  font-size: 18px; /* Larger font size */
+  font-family: 'Georgia', serif; /* Stylish font */
+}
+
+.nav-link:hover {
+  color: #f8d7da; /* Soft red on hover */
+  text-decoration: underline;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-}
-
-.Header, .Home, .Sidebar, .Comments {
-  margin: 20px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .Header {
   width: 100%;
-  background-color: #333;
+  background-color: #144a12; /* Green for a Christmas tree feel */
   color: white;
-  padding: 10px 0;
-  text-align: center;
+  padding: 15px 0;
+  text-align: left; /* Align text to the left */
+  font-size: 28px; /* Larger font for the header */
+  font-family: 'Times New Roman', serif; /* Elegant font */
+}
+
+.blog-title {
+  font-size: 32px; /* Large font for the blog title */
+  font-weight: bold;
+  color: #ffffff; /* White color for the title */
+  margin-left: 10px; /* Margin to the left */
+}
+
+.Home, .Sidebar, .Comments {
+  margin: 25px;
+  background-color: white; /* White sections for a clean, snowy look */
+  border-radius: 8px; /* Rounded edges */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #333333; /* Readable text color */
 }
 
 .Home {
   flex: 2;
+  margin-right: 25px;
 }
 
 .Sidebar {
@@ -44,6 +80,21 @@
 
 .Comments {
   width: 100%;
-  background-color: #f9f9f9;
-  padding: 20px;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .Home, .Sidebar {
+    margin-right: 0;
+    width: 100%;
+  }
 }

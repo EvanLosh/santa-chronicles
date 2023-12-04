@@ -3,7 +3,7 @@ import Comment from './Comment'
 
 function Comments() {
     return (
-        <div>
+        <div className="Comments">
             <p>This is the comment section.</p>
             <Comment />
         </div>
