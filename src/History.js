@@ -1,16 +1,20 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
-function History({ posts }) {
+function History({ posts, displayPost }) {
 
-    function handleClick() {
-        window.location.href = '/'
+    const navigate = useNavigate() // useNavigate() let's use redirect the user to Home without reloading the page
+
+    function handleClick(id) {
+        displayPost(id)
+        navigate('/')
     }
 
     return (
         <div>
             {posts && posts.map((post) => (
                 <div key={post.id}>
-                    <h3 onClick={handleClick}>{post.date} {post.title}</h3>
+                    <h3 onClick={() => handleClick(post.id)}>{post.date} {post.title}</h3>
 
                 </div>
             ))}

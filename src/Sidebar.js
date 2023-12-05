@@ -1,21 +1,20 @@
 import React from 'react'
 
-function Sidebar({ posts, setPostIndex }) {
-    const latestPosts = posts.slice(-3)
+function Sidebar({ posts, displayPost }) {
+    const latestPosts = [...posts].slice(-3)
+
+    function handleClick(id) {
+        displayPost(id)
+    }
+
+    const titles = latestPosts.map(post =>
+        <p key={post.id} onClick={() => handleClick(post.id)}>
+            {post.title} {post.date}
+        </p>)
 
     return (
         <div className="Sidebar">
-            {latestPosts.map((post, index) => {
-                const handleClick = () => {
-                    setPostIndex(posts.length - 3 + index)
-                }
-
-                return (
-                    <li key={post.id} onClick={handleClick}>
-                        {post.title} {post.date}
-                    </li>
-                )
-            })}
+            {titles}
         </div>
     )
 }

@@ -3,15 +3,15 @@ import SelectedPost from './SelectedPost'
 import Sidebar from './Sidebar'
 import './Home.css'
 
-function Home({ posts, postIndex, setPostIndex }) {
+function Home({ posts, selectedPost, displayPost }) {
 
     return (
         <div className="Home">
             <div className="main-content">
-                <SelectedPost post={posts[postIndex]} />
+                <SelectedPost post={selectedPost} />
             </div>
             <div className="sidebar-content">
-                <Sidebar posts={posts} setPostIndex={setPostIndex} />
+                <Sidebar posts={posts} displayPost={displayPost} />
             </div>
         </div>
     )

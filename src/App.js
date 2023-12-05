@@ -9,22 +9,26 @@ import History from './History';
 import './About.css';
 
 function App() {
-  // When the page loads, get the database and put it in a state
-  const [posts, setPosts] = useState([
+
+  const blankPost = [
     {
       "id": 1,
-      "date": "01-01-0001",
-      "title": "No data",
-      "body": "No data",
+      "date": "",
+      "title": "",
+      "body": "",
       "comments": [
         {
           "id": 1,
-          "date": "01-01-0001",
-          "name": "No data",
-          "comment": "No data"
+          "date": "",
+          "name": "",
+          "comment": ""
         }
       ]
-    }])
+    }]
+
+  // When the page loads, get the database and put it in a state
+  const [posts, setPosts] = useState(blankPost)
+  const [selectedPost, setSelectedPost] = useState(blankPost)
 
   useEffect(() => {
     loadData()
@@ -34,8 +38,8 @@ function App() {
     fetch('http://localhost:3001/posts')
       .then(res => res.json())
       .then(data => {
-        setPostIndex(data.length - 1)
         setPosts(data)
+        setSelectedPost(data[data.length - 1])
       })
   }
 
@@ -43,8 +47,10 @@ function App() {
     setPosts((prevPosts) => [...prevPosts, newPost])
   }
 
-  // What is the index of the post to be displayed in full detail on the homepage?
-  const [postIndex, setPostIndex] = useState(0)
+  function displayPost(id) {
+    let index = posts.map(post => post.id).indexOf(id)
+    setSelectedPost(posts[index])
+  }
 
 
 
@@ -53,7 +59,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} postIndex={postIndex} setPostIndex={setPostIndex} />
+      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} />
     },
     {
       path: "/about",
@@ -68,7 +74,7 @@ function App() {
     {
       path: "/history",
       // Props to History get passed here
-      element: <History posts={posts} />
+      element: <History posts={posts} displayPost={displayPost} />
     }
   ]);
 
