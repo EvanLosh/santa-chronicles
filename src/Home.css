@@ -38,4 +38,19 @@
     padding: 20px;
     margin-top: 20px;
 }
+.Home .favorite-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Home .post-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.Home .post-content {
+    flex-grow: 1;
+}
+.Home .button-container {
+    text-align: right;
+}

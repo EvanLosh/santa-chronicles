@@ -16,7 +16,7 @@ function Sidebar({ posts, displayPost }) {
         <div className="Sidebar">
             {titles}
         </div>
-    )
+    );
 }
 
 export default Sidebar
