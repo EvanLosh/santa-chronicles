@@ -53,7 +53,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} postIndex={postIndex} />
+      element: <Home posts={posts} postIndex={postIndex} setPostIndex={setPostIndex} />
     },
     {
       path: "/about",
