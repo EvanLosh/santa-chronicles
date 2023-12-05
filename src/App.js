@@ -22,6 +22,10 @@ function App() {
       .then(data => setPosts(data))
   }
 
+  const addNewPost = (newPost) => {
+    setPosts((prevPosts) => [...prevPosts, newPost])
+  }
+
   // Configure our router
   const router = createBrowserRouter([
     {
@@ -37,7 +41,7 @@ function App() {
     {
       path: "/new-post-form",
       // Props to NewPostForm get passed here
-      element: <NewPostForm />
+      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts}/>
     },
     {
       path: "/history",
