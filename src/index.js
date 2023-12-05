@@ -4,40 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './Home';
-import About from './About';
-import NewPostForm from './NewPostForm';
-import History from './History';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/about",
-    element: <About />
-  },
-  {
-    path: "/new-post-form",
-    element: <NewPostForm />
-  },
-  {
-    path: "/history",
-    element: <History />
-  }
-]);
+
 
 root.render()
 
 root.render(
   <div>
     <App />
-    <p>Stuff below here is rendered by the React Router. The routes are "/", "/about", "/new-post-form", and "/history".</p>
-    <RouterProvider router={router} />
+
   </div>
 );
 
