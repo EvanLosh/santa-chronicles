@@ -1,0 +1,102 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date": "12-24-2023",
+            "title": "Weather Forecast for Christmas Eve",
+            "body": "Hello everyone, Santa here! I've just checked the weather forecast for Christmas Eve and it looks like we're in for a bit of a challenge. There's a blizzard brewing in Chicago and high winds over the north east. But don't worry, we've got this under control. The reindeer and I are used to all sorts of weather. We'll just need to go a bit slower in the blizzard. Remember, safety first! Ho ho ho!",
+            "comments": [
+                {
+                    "id": 1,
+                    "date": "12-24-2023",
+                    "name": "Frosty",
+                    "comment": "Don't forget to bring a thermos with hot chocolate tonight!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "date": "12-23-2023",
+            "title": "Last Minute Preparations",
+            "body": "It's the day before Christmas and all through the North Pole, everyone is busy with last minute preparations. The elves are wrapping the final presents and I'm doing some last minute checks on the sleigh. Rudolph's nose is shining bright and the rest of the reindeer are ready to go. We can't wait to deliver presents to all the good boys and girls around the world!",
+            "comments": [
+                {
+                    "id": 2,
+                    "date": "12-23-2023",
+                    "name": "Elfred",
+                    "comment": "We're all set and ready to go, Santa!"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "date": "12-22-2023",
+            "title": "North Pole Weather Update",
+            "body": "Brrr, it's a chilly -30 degrees here at the North Pole today. But that's just how we like it! The cold weather is perfect for making toys. The elves are hard at work in the workshop, and I'm about to go feed the reindeer. Stay warm, everyone!",
+            "comments": [
+                {
+                    "id": 3,
+                    "date": "12-22-2023",
+                    "name": "Snowflake",
+                    "comment": "Stay warm, Santa! We're working hard to get all the toys ready!"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "date": "12-21-2023",
+            "title": "Elf of the Month",
+            "body": "Congratulations to Jingle, our Elf of the Month! Jingle has been working extra hard to make sure all the toys are ready in time for Christmas. Keep up the good work, Jingle!",
+            "comments": [
+                {
+                    "id": 4,
+                    "date": "12-21-2023",
+                    "name": "Jingle",
+                    "comment": "Thank you, Santa! I'm honored to be the Elf of the Month!"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "date": "12-20-2023",
+            "title": "Christmas Countdown",
+            "body": "Can you believe it? There are only 5 more days until Christmas! The excitement is building here at the North Pole. The elves are putting the finishing touches on the toys and I'm double-checking my list. Remember, it's not too late to be nice!",
+            "comments": [
+                {
+                    "id": 5,
+                    "date": "12-20-2023",
+                    "name": "Twinkle",
+                    "comment": "We're so excited, Santa! Can't wait for Christmas!"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "date": "12-19-2023",
+            "title": "Reindeer Games",
+            "body": "We had a fun day today watching the annual Reindeer Games. Comet won the speed race this year! All the reindeer are in great shape for our big flight on Christmas Eve.",
+            "comments": [
+                {
+                    "id": 6,
+                    "date": "12-19-2023",
+                    "name": "Comet",
+                    "comment": "Thanks, Santa! I've been training all year for the race."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "date": "12-18-2023",
+            "title": "Holiday Baking",
+            "body": "Mrs. Claus has been busy baking cookies for all the elves. The gingerbread ones are my favorite! There's nothing like the smell of fresh cookies to make the North Pole feel like home.",
+            "comments": [
+                {
+                    "id": 7,
+                    "date": "12-18-2023",
+                    "name": "Mrs. Claus",
+                    "comment": "I'm glad you like the cookies, Santa! I'll make sure to bake extra gingerbread ones for you."
+                }
+            ]
+        }
+    ]
+}
