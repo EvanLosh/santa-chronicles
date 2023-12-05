@@ -6,7 +6,7 @@ function Home({ posts }) {
     return (
         <div className="Home">
             <p>This is home.</p>
-            {posts.map((post) => (
+            {posts && posts.map((post) => (
                 <div key={post.id}>
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
