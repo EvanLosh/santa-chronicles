@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SelectedPost from './SelectedPost'
 import Sidebar from './Sidebar'
 
-function Home({ posts }) {
+function Home({ posts, postIndex }) {
+
+
     return (
         <div className="Home">
             <p>This is home.</p>
@@ -12,7 +14,7 @@ function Home({ posts }) {
                     <p>{post.body}</p>
                 </div>
             ))}
-            <SelectedPost />
+            <SelectedPost post={posts[postIndex]} />
             <Sidebar />
         </div>
     )

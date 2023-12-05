@@ -1,11 +1,12 @@
 import React from 'react'
 import Comments from './Comments'
 
-function SelectedPost() {
+function SelectedPost({ post }) {
+
     return (
         <div>
             <p>This is a selected blog post.</p>
-            <Comments />
+            <Comments comments={post.comments} />
         </div>
     )
 }

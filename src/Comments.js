@@ -1,10 +1,10 @@
 import React from 'react'
 import Comment from './Comment'
 
-function Comments() {
+function Comments({ comments }) {
     return (
         <div className="Comments">
-            <p>This is the comment section.</p>
+            <p>Comments:</p>
             <Comment />
         </div>
     )

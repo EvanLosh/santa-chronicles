@@ -10,7 +10,21 @@ import './About.css';
 
 function App() {
   // When the page loads, get the database and put it in a state
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([
+    {
+      "id": 1,
+      "date": "01-01-0001",
+      "title": "No data",
+      "body": "No data",
+      "comments": [
+        {
+          "id": 1,
+          "date": "01-01-0001",
+          "name": "No data",
+          "comment": "No data"
+        }
+      ]
+    }])
 
   useEffect(() => {
     loadData()
@@ -26,12 +40,15 @@ function App() {
     setPosts((prevPosts) => [...prevPosts, newPost])
   }
 
+  // What is the index of the post to be displayed in full detail on the homepage?
+  const [postIndex, setPostIndex] = useState(0)
+
   // Configure our router
   const router = createBrowserRouter([
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} />
+      element: <Home posts={posts} postIndex={postIndex} />
     },
     {
       path: "/about",
@@ -41,7 +58,7 @@ function App() {
     {
       path: "/new-post-form",
       // Props to NewPostForm get passed here
-      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts}/>
+      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts} />
     },
     {
       path: "/history",
