@@ -8,6 +8,7 @@ import NewPostForm from './NewPostForm';
 import History from './History';
 
 function App() {
+  // When the page loads, get the database and put it in a state
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -20,23 +21,26 @@ function App() {
       .then(data => setPosts(data))
   }
 
-  // Fetch the database here, put it in a state, and pass it down to Home and History as props
-
+  // Configure our router
   const router = createBrowserRouter([
     {
       path: "/",
+      // Props to Home get passed here
       element: <Home posts={posts} />
     },
     {
       path: "/about",
+      // Props to About get passed here
       element: <About />
     },
     {
       path: "/new-post-form",
+      // Props to NewPostForm get passed here
       element: <NewPostForm />
     },
     {
       path: "/history",
+      // Props to History get passed here
       element: <History posts={posts} />
     }
   ]);
@@ -46,11 +50,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="content">
-        {/* The Home, About, NewPostForm, and History components get rendered by the router in index.js */}
+        {/* RouterProvider switches between Home, About, NewPostForm, and History */}
         <RouterProvider router={router} />
-        {/* <Home posts={posts} />
-        <Sidebar />
-        <History posts={posts} /> */}
       </div>
 
     </div>
