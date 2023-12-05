@@ -43,6 +43,8 @@ function App() {
   // What is the index of the post to be displayed in full detail on the homepage?
   const [postIndex, setPostIndex] = useState(0)
 
+  
+
   // Configure our router
   const router = createBrowserRouter([
     {
