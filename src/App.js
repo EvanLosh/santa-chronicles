@@ -48,12 +48,10 @@ function App() {
     setPosts((prevPosts) => [...prevPosts, newPost])
   }
 
-<<<<<<< HEAD
   function displayPost(id) {
     let index = posts.map(post => post.id).indexOf(id)
     setSelectedPost(posts[index])
   }
-=======
   const toggleFavorite = (post) => {
     const updatedPosts = posts.map((currentPost) => {
       if (currentPost.id === post.id) {
@@ -69,10 +67,6 @@ function App() {
     setPosts(updatedPosts)
   }
 
-  // What is the index of the post to be displayed in full detail on the homepage?
-  const [postIndex, setPostIndex] = useState(0)
->>>>>>> refs/remotes/origin/main
-
 
 
   // Configure our router
@@ -80,11 +74,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-<<<<<<< HEAD
-      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} />
-=======
-      element: <Home posts={posts} postIndex={postIndex} setPostIndex={setPostIndex} toggleFavorite={toggleFavorite}/>
->>>>>>> refs/remotes/origin/main
+      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite}/>
     },
     {
       path: "/about",
