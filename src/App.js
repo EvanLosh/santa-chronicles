@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import NewPostForm from './NewPostForm';
 import History from './History';
+import './About.css';
 
 function App() {
   // When the page loads, get the database and put it in a state
