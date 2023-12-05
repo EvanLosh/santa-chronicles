@@ -5,7 +5,9 @@ function SelectedPost({ post }) {
 
     return (
         <div>
-            <p>This is a selected blog post.</p>
+            <h1>{post.title}</h1>
+            <h2>{post.date}</h2>
+            <p>{post.body}</p>
             <Comments comments={post.comments} />
         </div>
     )

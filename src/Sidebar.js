@@ -1,9 +1,15 @@
 import React from 'react'
 
-function Sidebar() {
+function Sidebar({ posts }) {
+    const latestPosts = posts.slice(-3)
+
     return (
         <div className="Sidebar">
-            <p>This is the sidebar.</p>
+            <ul>
+            {latestPosts.map((post) => (
+                <li key={post.id}> {post.title} {post.date}</li> 
+            ))}
+            </ul>
         </div>
     )
 }
