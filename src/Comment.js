@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Comment() {
+function Comment({ comment }) {
     return (
         <div className="Comment">
-            <p>This is a comment.</p>
+            <p>{comment.date}</p>
+            <p>{comment.name} said: {comment.comment}</p>
+            <p></p>
         </div>
     )
 }

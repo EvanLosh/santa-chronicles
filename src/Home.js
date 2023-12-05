@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SelectedPost from './SelectedPost'
 import Sidebar from './Sidebar'
 
