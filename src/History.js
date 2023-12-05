@@ -1,13 +1,17 @@
 import React from 'react'
 
 function History({ posts }) {
+
+    function handleClick() {
+        window.location.href = '/'
+    }
+
     return (
         <div>
-            <p>This is history.</p>
             {posts && posts.map((post) => (
                 <div key={post.id}>
-                    <h2>{post.title}</h2>
-                    <p>{post.body}</p>
+                    <h3 onClick={handleClick}>{post.date} {post.title}</h3>
+
                 </div>
             ))}
         </div>
