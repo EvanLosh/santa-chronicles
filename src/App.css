@@ -9,17 +9,19 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: #e6f2ff; /* Light blue for a snowy feel */
+  background-color: #e6f2ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: center; /* Center the items */
-  align-items: center; /* Align items vertically */
-  padding: 15px;
-  background-color: #b3000c; /* Rich red for a Christmas feel */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #b3000c;
   color: white;
   width: 100%;
 }
@@ -27,13 +29,13 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  margin: 0 20px; /* Increase spacing between links */
-  font-size: 18px; /* Larger font size */
-  font-family: 'Georgia', serif; /* Stylish font */
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
 }
 
 .nav-link:hover {
-  color: #f8d7da; /* Soft red on hover */
+  color: #f8d7da;
   text-decoration: underline;
 }
 
@@ -46,27 +48,27 @@
 
 .Header {
   width: 100%;
-  background-color: #144a12; /* Green for a Christmas tree feel */
+  background-color: #144a12;
   color: white;
   padding: 15px 0;
-  text-align: left; /* Align text to the left */
-  font-size: 28px; /* Larger font for the header */
-  font-family: 'Times New Roman', serif; /* Elegant font */
+  text-align: left;
+  font-size: 28px;
+  font-family: 'Times New Roman', serif;
 }
 
 .blog-title {
-  font-size: 32px; /* Large font for the blog title */
+  font-size: 32px;
   font-weight: bold;
-  color: #ffffff; /* White color for the title */
-  margin-left: 10px; /* Margin to the left */
+  color: #ffffff;
+  margin-left: 10px;
 }
 
 .Home, .Sidebar, .Comments {
   margin: 25px;
-  background-color: white; /* White sections for a clean, snowy look */
-  border-radius: 8px; /* Rounded edges */
+  background-color: white;
+  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  color: #333333; /* Readable text color */
+  color: #333333;
 }
 
 .Home {

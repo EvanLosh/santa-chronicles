@@ -1,0 +1,41 @@
+.Home .main-content, .Home .sidebar-content, .Home .comments-section {
+    min-height: 500px; /* Adjust this value as needed */
+    /* rest of your styles... */
+}
+
+.Home {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.Home .main-content {
+    flex: 3;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.Home .sidebar-content {
+    flex: 1;
+    background-color: white; 
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.Home .comments-section {
+    min-height: 300px;
+    flex: 1;
+    background-color: white; 
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+

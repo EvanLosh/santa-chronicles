@@ -1,5 +1,6 @@
 import React from 'react'
 import Comment from './Comment'
+import './Home.css'
 
 function Comments({ comments }) {
     let commentElements = null
@@ -14,7 +15,7 @@ function Comments({ comments }) {
     }
 
     return (
-        <div className="Comments">
+        <div className="comments-section">
             <h3>Comments:</h3>
             {commentElements}
         </div>
