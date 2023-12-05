@@ -2,10 +2,16 @@ import React from 'react'
 import Comment from './Comment'
 
 function Comments({ comments }) {
-    const commentElements = comments.map((comment) => {
-        return <Comment key={comment.id} comment={comment} />
+    let commentElements = null
+        if (typeof(comments) === "object") {
+            commentElements =
+        comments.map((comment) => {
+            return <Comment key={comment.id} comment={comment} />
+        }
+        )
+    } else {
+        commentElements = null
     }
-    )
 
     return (
         <div className="Comments">

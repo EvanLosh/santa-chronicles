@@ -33,7 +33,10 @@ function App() {
   const loadData = () => {
     fetch('http://localhost:3001/posts')
       .then(res => res.json())
-      .then(data => setPosts(data))
+      .then(data => {
+        setPostIndex(data.length-1)
+        console.log(data)
+        setPosts(data)})
   }
 
   const addNewPost = (newPost) => {
