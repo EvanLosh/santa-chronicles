@@ -16,6 +16,7 @@ function App() {
       "date": "01-01-0001",
       "title": "No data",
       "body": "No data",
+      "favorite": false,
       "comments": [
         {
           "id": 1,

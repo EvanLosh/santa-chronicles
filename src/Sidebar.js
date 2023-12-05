@@ -17,7 +17,7 @@ function Sidebar({ posts, setPostIndex }) {
                 )
             })}
         </div>
-    )
+    );
 }
 
 export default Sidebar
