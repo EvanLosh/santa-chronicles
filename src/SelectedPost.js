@@ -1,22 +1,29 @@
-import React, { useState } from 'react'
-import Comments from './Comments'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
+import Comments from './Comments';
 
-function SelectedPost({ post }) {
+function SelectedPost({ post, toggleFavorite }) {
 const [isFavorite, setIsFavorite] = useState(post.favorite)
 
-const toggleFavorite = () => {
-    setIsFavorite(!isFavorite)
-    post.favorite = !post.favorite
+const handleFavoriteClick = () => {
+    toggleFavorite(post)
 }
     return (
-        <div>
-            <h1>{post.title}</h1>
-            <h2>{post.date}</h2>
-            <p>{post.body}</p>
-            <Comments comments={post.comments} />
-            <button onClick={toggleFavorite}>
-                {isFavorite ? 'Unfavorite' : 'Favorite'}
-            </button>
+        <div className="post-container">
+            <div className="post-content">
+                <h1>{post.title}</h1>
+                <h2>{post.date}</h2>
+                <p>{post.body}</p>
+                <Comments comments={post.comments} />
+                <div className="button-container">
+                    <button className="favorite-button" onClick={handleFavoriteClick}>
+                        <FontAwesomeIcon icon={post.favorite ? solidHeart : regularHeart} />
+                        <span>{post.favorite ? 'Unfavorite' : 'Favorite'}</span>
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

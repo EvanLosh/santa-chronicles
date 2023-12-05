@@ -44,6 +44,21 @@ function App() {
     setPosts((prevPosts) => [...prevPosts, newPost])
   }
 
+  const toggleFavorite = (post) => {
+    const updatedPosts = posts.map((currentPost) => {
+      if (currentPost.id === post.id) {
+        return {
+          ...currentPost,
+          favorite: !currentPost.favorite
+        }
+      } else {
+        return currentPost
+      }
+    })
+  
+    setPosts(updatedPosts)
+  }
+
   // What is the index of the post to be displayed in full detail on the homepage?
   const [postIndex, setPostIndex] = useState(0)
 
@@ -54,7 +69,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} postIndex={postIndex} setPostIndex={setPostIndex} />
+      element: <Home posts={posts} postIndex={postIndex} setPostIndex={setPostIndex} toggleFavorite={toggleFavorite}/>
     },
     {
       path: "/about",
