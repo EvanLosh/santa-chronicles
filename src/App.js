@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import NewPostForm from './NewPostForm';
 import History from './History';
+import './About.css';
 
 function App() {
   // When the page loads, get the database and put it in a state
@@ -19,6 +20,10 @@ function App() {
     fetch('http://localhost:3001/posts')
       .then(res => res.json())
       .then(data => setPosts(data))
+  }
+
+  const addNewPost = (newPost) => {
+    setPosts((prevPosts) => [...prevPosts, newPost])
   }
 
   // Configure our router
@@ -36,7 +41,7 @@ function App() {
     {
       path: "/new-post-form",
       // Props to NewPostForm get passed here
-      element: <NewPostForm />
+      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts}/>
     },
     {
       path: "/history",
