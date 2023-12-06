@@ -11,6 +11,12 @@
           "date": "12-24-2023",
           "name": "Frosty",
           "comment": "Don't forget to bring a thermos with hot chocolate tonight!"
+        },
+        {
+          "id": "cc3c619f-3720-4764-90fc-79343c848714",
+          "date": "12/6/2023",
+          "name": "Mariah Carey",
+          "comment": "I don't want a lot for Christmas"
         }
       ]
     },
@@ -95,18 +101,83 @@
           "date": "12-18-2023",
           "name": "Mrs. Claus",
           "comment": "I'm glad you like the cookies, Santa! I'll make sure to bake extra gingerbread ones for you."
+        },
+        {
+          "id": "b0ee6d6a-73f3-430f-8926-db8aa25eb001",
+          "date": "12/6/2023",
+          "name": "Santa",
+          "comment": "gimme dat gingerbread"
         }
       ]
     },
     {
       "title": "Embracing the Magic of Christmas",
       "body": "As I prepare for my annual journey on Christmas Eve, I can't help but feel a warmth in my heart that can only be described as pure magic. The holiday season is a time when joy dances through the air, and the spirit of giving becomes the melody that brings us all together.",
-      "id": 8
+      "id": 8,
+      "comments": [
+        {
+          "id": "fe594de1-0dc3-4ecc-86f8-8543774716b1",
+          "date": "12/6/2023",
+          "name": "Evan",
+          "comment": "Can I add a comment?"
+        }
+      ]
     },
     {
       "title": "Journeying from the North Pole",
       "body": "From my cozy workshop at the North Pole, where the elves work their merry magic, to the iconic sleigh ride powered by my trusty reindeer, Christmas preparations are in full swing. The excitement builds as we gear up to embark on a global adventure, bringing smiles and happiness to children far and wide.",
-      "id": 9
+      "id": 9,
+      "comments": [
+        {
+          "id": "c2a81bbb-0f81-478a-8d50-0ce531370955",
+          "date": "12/6/2023",
+          "name": "my ramen",
+          "comment": "can I add a comment?"
+        }
+      ]
+    },
+    {
+      "title": "test 123",
+      "body": "I'm testing our site",
+      "id": 10,
+      "comments": [
+        {
+          "id": "913aecd5-aa64-444e-995f-bd8bac4a6ab9",
+          "date": "12/6/2023",
+          "name": "Evan",
+          "comment": "can I add a comment?"
+        }
+      ]
+    },
+    {
+      "title": "Apples",
+      "body": "Oranges",
+      "id": 11,
+      "comments": [
+        {
+          "id": "74d62875-bdbc-4390-9672-db91838f93c6",
+          "date": "12/6/2023",
+          "name": "Evan",
+          "comment": "Can I add a comment?"
+        }
+      ]
+    },
+    {
+      "title": "Red",
+      "body": "Blue",
+      "id": 12
+    },
+    {
+      "title": "Testing dates",
+      "body": "Will this post have a date?",
+      "date": "2023-12-06T23:49:08.538Z",
+      "id": 13
+    },
+    {
+      "title": "testing dates again",
+      "body": "what will the date look like?",
+      "date": "12/6/2023",
+      "id": 14
     }
   ]
 }

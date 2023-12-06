@@ -63,7 +63,7 @@ function App() {
         return currentPost
       }
     })
-  
+
     setPosts(updatedPosts)
   }
 
@@ -74,7 +74,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite} setPosts={setPosts}/>
+      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite} setPosts={setPosts} />
     },
     {
       path: "/about",
@@ -84,7 +84,7 @@ function App() {
     {
       path: "/new-post-form",
       // Props to NewPostForm get passed here
-      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts} />
+      element: <NewPostForm setPosts={setPosts} posts={posts} />
     },
     {
       path: "/history",

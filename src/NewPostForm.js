@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
-function NewPostForm({ onAddNewPost, setPosts, posts }) {
+function NewPostForm({ setPosts, posts }) {
     const [formData, setFormData] = useState({
         title: '',
         body: '',
@@ -16,21 +17,20 @@ function NewPostForm({ onAddNewPost, setPosts, posts }) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        onAddNewPost(formData)
-        setFormData({
-            title: '',
-            body: '',
-        })
         fetch('http://localhost:3001/posts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify({ ...formData, date: (new Date()).toLocaleDateString() }),
         })
             .then((response) => response.json())
             .then((newPost) => {
                 setPosts([...posts, newPost])
+                setFormData({
+                    title: '',
+                    body: '',
+                })
             })
             .catch((error) => console.error('Error adding new post', error))
     }
