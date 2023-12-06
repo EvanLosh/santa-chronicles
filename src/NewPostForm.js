@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
+// import { v4 as uuidv4 } from 'uuid'
 
 function NewPostForm({ setPosts, posts }) {
     const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ function NewPostForm({ setPosts, posts }) {
             <h2>Create New Post</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='title'>Title:</label>
-                <br></br>
+                <br></br> {/* line breaks to improve page layout */}
                 <textarea type='text' id='new-post-title' name='title' value={formData.title} onChange={handleInputChange} />
                 <br></br>
                 <label htmlFor='body'>Body:</label>

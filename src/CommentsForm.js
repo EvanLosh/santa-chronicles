@@ -54,7 +54,7 @@ function CommentsForm({ postId, posts, setPosts }) {
         <div>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='title'>Name</label>
-                <br></br>
+                <br></br> {/* line breaks to improve page layout */}
                 <input type='text' id='name' name='name' value={formData.name} onChange={handleInputChange} />
                 <br></br>
                 <label htmlFor='comment'>Comment</label>

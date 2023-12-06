@@ -12,14 +12,14 @@ function App() {
 
   const blankPost = [
     {
-      "id": 1,
+      "id": 0,
       "date": "",
       "title": "",
       "body": "",
       "favorite": false,
       "comments": [
         {
-          "id": 1,
+          "id": 0,
           "date": "",
           "name": "",
           "comment": ""
@@ -30,11 +30,6 @@ function App() {
   // When the page loads, get the database and put it in a state
   const [posts, setPosts] = useState(blankPost)
   const [selectedPost, setSelectedPost] = useState(blankPost)
-
-  useEffect(() => {
-    loadData()
-  }, [])
-
   const loadData = () => {
     fetch('http://localhost:3001/posts')
       .then(res => res.json())
@@ -43,15 +38,16 @@ function App() {
         setSelectedPost(data[data.length - 1])
       })
   }
+  useEffect(() => {
+    loadData()
+  }, [])
 
-  const addNewPost = (newPost) => {
-    setPosts((prevPosts) => [...prevPosts, newPost])
-  }
-
+  // callback to set which post is displayed in Home
   function displayPost(id) {
-    let index = posts.map(post => post.id).indexOf(id)
-    setSelectedPost(posts[index])
+    setSelectedPost(posts.find(post => (post.id == id)))
   }
+
+  // Favorite posts
   const toggleFavorite = (post) => {
     const updatedPosts = posts.map((currentPost) => {
       if (currentPost.id === post.id) {
@@ -63,13 +59,10 @@ function App() {
         return currentPost
       }
     })
-
     setPosts(updatedPosts)
   }
 
-
-
-  // Configure our router
+  // Configure our Router
   const router = createBrowserRouter([
     {
       path: "/",
@@ -101,7 +94,6 @@ function App() {
         {/* RouterProvider switches between Home, About, NewPostForm, and History */}
         <RouterProvider router={router} />
       </div>
-
     </div>
   );
 }
