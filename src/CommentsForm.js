@@ -12,26 +12,34 @@ function CommentsForm ({ postId, posts, setPosts }) {
     //     "name": "",
     //     "comment": ""
     // }
-    let index = (posts.map((post) => post.id).filter(id => id == postId))[0]
     let updatedPost = [
         {
-        "id": 1,
-        "date": "",
-        "title": "",
-        "body": "",
-        "favorite": false,
-        "comments": [
-            {
             "id": 1,
             "date": "",
-            "name": "",
-            "comment": ""
-            }
-        ]
+            "title": "",
+            "body": "",
+            "favorite": false,
+            "comments": [
+                {
+                    "id": 1,
+                    "date": "",
+                    "name": "",
+                    "comment": ""
+                }
+            ]
         }]
-    updatedPost = posts[index]
-    updatedPost.comments.name = formData.name
-    updatedPost.comments.comment = formData.comment
+    let index = posts.findIndex((post) => post.id == postId)
+    if (index >= 0) {
+
+            updatedPost = posts[index]
+            updatedPost.comments.push({
+                id: updatedPost.comments.length + 1, 
+                date: "", 
+                name: formData.name,
+                comment: formData.comment
+            })
+        }
+    // updatedPost.comments.comment = formData.comment
 
     const handleSubmit = (e) => {
         e.preventDefault()

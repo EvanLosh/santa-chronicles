@@ -5,14 +5,14 @@ import './Home.css'
 
 function Comments({ comments, postId, posts, setPosts }) {
     let commentElements = null
-        if (typeof(comments) === "object") {
-            commentElements =
-        comments.map((comment) => {
+    let emptyComments = []
+
+    if (Array.isArray(comments)) {
+        commentElements = comments.map((comment) => {
             return <Comment key={comment.id} comment={comment} />
-        }
-        )
+        })
     } else {
-        commentElements = null
+        commentElements = []
     }
 
     return (
