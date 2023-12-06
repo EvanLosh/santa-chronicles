@@ -1,62 +1,47 @@
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
+
 
 function CommentsForm ({ postId, posts, setPosts }) {
     const [formData, setFormData] = useState({
         name: '',
         comment: ''
     })
-    
-    // {
-    //     "id": 1,
-    //     "date": "",
-    //     "name": "",
-    //     "comment": ""
-    // }
-    let updatedPost = [
-        {
-            "id": 1,
-            "date": "",
-            "title": "",
-            "body": "",
-            "favorite": false,
-            "comments": [
-                {
-                    "id": 1,
-                    "date": "",
-                    "name": "",
-                    "comment": ""
-                }
-            ]
-        }]
-    let index = posts.findIndex((post) => post.id == postId)
-    if (index >= 0) {
-
-            updatedPost = posts[index]
-            updatedPost.comments.push({
-                id: updatedPost.comments.length + 1, 
-                date: "", 
-                name: formData.name,
-                comment: formData.comment
-            })
-        }
-    // updatedPost.comments.comment = formData.comment
 
     const handleSubmit = (e) => {
         e.preventDefault()
+    
+        let updatedPost = posts.find((post) => post.id == postId)
+        if (updatedPost) {
+            if (!Array.isArray(updatedPost.comments)) {
+                updatedPost.comments = []
+            }
+            const currentDate = new Date()
+            const formattedDate = currentDate.toLocaleDateString()
+            updatedPost.comments.push({
+                id: uuidv4(), 
+                date: formattedDate,
+                name: formData.name,
+                comment: formData.comment
+            })
+            
+        }
+
         fetch('http://localhost:3001/posts/' + postId, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({comments: formData})
+            body: JSON.stringify({comments: updatedPost.comments})
             })
             .then((response) => response.json())
             .then((newPost) => {
                 console.log(newPost)
-                setPosts([...posts, updatedPost])
+                setPosts([...posts.filter(post => post.id !== updatedPost.id), updatedPost])
             })
             .catch((error) => console.error('Error adding new post', error))
         }
+    
     const handleInputChange = (e) => {
         const { name, value } = e.target
         setFormData({

@@ -1,6 +1,7 @@
 import React from 'react'
 import Comment from './Comment'
 import CommentsForm from './CommentsForm'
+import { v4 as uuidv4 } from 'uuid'
 import './Home.css'
 
 function Comments({ comments, postId, posts, setPosts }) {
@@ -8,6 +9,13 @@ function Comments({ comments, postId, posts, setPosts }) {
     let emptyComments = []
 
     if (Array.isArray(comments)) {
+        comments = comments.map((comment) => {
+            if (!comment.id) {
+                comment.id = uuidv4()
+            }
+            return comment
+    })
+    
         commentElements = comments.map((comment) => {
             return <Comment key={comment.id} comment={comment} />
         })
@@ -23,5 +31,6 @@ function Comments({ comments, postId, posts, setPosts }) {
         </div>
     )
 }
+
 
 export default Comments
