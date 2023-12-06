@@ -104,14 +104,13 @@
       "id": 8
     },
     {
-      "title": "Test",
-      "body": "Test",
-      "id": 9
-    },
-    {
       "title": "Journeying from the North Pole",
       "body": "From my cozy workshop at the North Pole, where the elves work their merry magic, to the iconic sleigh ride powered by my trusty reindeer, Christmas preparations are in full swing. The excitement builds as we gear up to embark on a global adventure, bringing smiles and happiness to children far and wide.",
-      "id": 10
+      "id": 9,
+      "comments": {
+        "name": "Meagan Truong",
+        "comment": "Test"
+      }
     }
   ]
 }

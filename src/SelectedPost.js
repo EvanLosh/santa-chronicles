@@ -4,7 +4,7 @@ import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
 import Comments from './Comments';
 
-function SelectedPost({ post, toggleFavorite }) {
+function SelectedPost({ post, toggleFavorite, posts, setPosts }) {
 const [isFavorite, setIsFavorite] = useState(post.favorite)
 
 const handleFavoriteClick = () => {
@@ -16,7 +16,7 @@ const handleFavoriteClick = () => {
                 <h1>{post.title}</h1>
                 <h2>{post.date}</h2>
                 <p>{post.body}</p>
-                <Comments comments={post.comments} />
+                <Comments comments={post.comments} postId={post.id} posts={posts} setPosts={setPosts}/>
                 <div className="button-container">
                     <button className="favorite-button" onClick={handleFavoriteClick}>
                         <FontAwesomeIcon icon={post.favorite ? solidHeart : regularHeart} />

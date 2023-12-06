@@ -74,7 +74,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite}/>
+      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite} setPosts={setPosts}/>
     },
     {
       path: "/about",
