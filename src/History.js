@@ -11,8 +11,8 @@ function History({ posts, displayPost }) {
     function handleSearch({ searchTerm }) {
         setSearchTerm(searchTerm)
 
-        const filtered = posts.filter((post) => 
-        post && post.title && post.title.toLowerCase().includes(searchTerm.toLowerCase())
+        const filtered = posts.filter((post) =>
+            post && post.title && post.title.toLowerCase().includes(searchTerm.toLowerCase())
         )
         setFilteredPosts(filtered)
     }
@@ -26,17 +26,17 @@ function History({ posts, displayPost }) {
         <div>
             <SearchBar onSearch={handleSearch} />
             {searchTerm ? (
-                filteredPosts.map((post) => (
+                filteredPosts.reverse().map((post) => (
                     <div key={post.id}>
                         <h3 onClick={() => handleClick(post.id)}>{post.date} {post.title}</h3>
                     </div>
                 ))
             ) : (
-            posts && posts.map((post) => (
-                <div key={post.id}>
-                    <h3 onClick={() => handleClick(post.id)}>{post.date} {post.title}</h3>
-                </div>
-            ))
+                posts && posts.reverse().map((post) => (
+                    <div key={post.id}>
+                        <h3 onClick={() => handleClick(post.id)}>{post.date} {post.title}</h3>
+                    </div>
+                ))
             )}
         </div>
     );
