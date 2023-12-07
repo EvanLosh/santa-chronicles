@@ -12,11 +12,11 @@
   background-color: #e6f2ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 100vh;
   justify-content: space-between;
 }
 
 .nav-bar {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,18 +52,23 @@
   color: black;
   padding: 15px 0;
   text-align: left;
-  font-size: 28px;
-  font-family: 'Times New Roman', serif;
+  font-size: 6em;
+
 }
 
 .blog-title {
-  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
   font-weight: bold;
   color: #ffffff;
-  margin-left: 10px;
+  margin: 0;
+  font-family: 'Tangerine', sans-serif;
 }
 
-.Home, .Sidebar, .Comments {
+.Home,
+.Sidebar,
+.Comments {
   margin: 25px;
   background-color: white;
   border-radius: 8px;
@@ -78,6 +83,10 @@
 
 .Sidebar {
   flex: 1;
+}
+
+.submissions {
+  font-family: 'Stylish';
 }
 
 .Comments {
@@ -95,23 +104,16 @@
     flex-direction: column;
   }
 
-  .Home, .Sidebar {
+  .Home,
+  .Sidebar {
     margin-right: 0;
     width: 100%;
   }
 
 }
-.Header, .nav-bar {
-  font-family: 'Mountains of Christmas', cursive;
-  
-}
 
-.blog-title {
-  font-size: 40px;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
+.nav-bar {}
+
 
 
 @media screen and (max-width: 768px) {

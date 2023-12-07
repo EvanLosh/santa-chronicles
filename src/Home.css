@@ -1,9 +1,12 @@
-.Home .main-content, .Home .sidebar-content, .Home .comments-section {
+.Home .main-content,
+.Home .sidebar-content,
+.Home .comments-section {
     min-height: 500px;
-    font-family: 'Mountains of Christmas', cursive;
+
 }
 
 .Home {
+    font-family: 'Hind Madurai', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +29,7 @@
     position: relative;
     padding-left: 20px;
     flex: 1;
-    background-color: white; 
+    background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -34,8 +37,13 @@
 }
 
 @keyframes snowfall {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
 }
 
 .Home .sidebar-content p::before {
@@ -49,17 +57,19 @@
 .Home .comments-section {
     min-height: 300px;
     flex: 1;
-    background-color: white; 
+    background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 20px;
 }
+
 .Home .favorite-button {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .Home .post-container {
     background-color: #f8e8e8;
     border: 1px solid #005f30;
@@ -82,7 +92,6 @@
     padding: 20px;
     overflow: hidden;
     color: #333;
-    font-family: 'Mountains of Christmas', cursive;
 }
 
 .button-container {
@@ -170,11 +179,9 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    font-family: 'Mountains of Christmas', cursive;
 }
 
 .submit-button:hover {
     background-color: #2f6b2c;
     transform: scale(1.05);
 }
-
