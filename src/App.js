@@ -47,10 +47,7 @@ function App() {
     setSelectedPost(posts.find(post => (post.id == id)))
   }
 
-<<<<<<< HEAD
-=======
   // Favorite posts
->>>>>>> fd4d8a2fc954e889a9053aaa7ec70d166c4818f4
   const toggleFavorite = (post) => {
     const updatedPosts = posts.map((currentPost) => {
       if (currentPost.id === post.id) {
@@ -62,10 +59,7 @@ function App() {
         return currentPost
       }
     })
-<<<<<<< HEAD
 
-=======
->>>>>>> fd4d8a2fc954e889a9053aaa7ec70d166c4818f4
     setPosts(updatedPosts)
 
     if (selectedPost.id === post.id) {
