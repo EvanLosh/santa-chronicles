@@ -11,7 +11,7 @@ function CommentsForm({ postId, posts, setPosts }) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        let updatedPost = posts.find((post) => post.id == postId)
+        let updatedPost = posts.find((post) => post.id === postId)
         if (updatedPost) {
             if (!Array.isArray(updatedPost.comments)) {
                 updatedPost.comments = []

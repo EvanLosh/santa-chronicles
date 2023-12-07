@@ -44,7 +44,7 @@ function App() {
 
   // callback to set which post is displayed in Home
   function displayPost(id) {
-    setSelectedPost(posts.find(post => (post.id == id)))
+    setSelectedPost(posts.find(post => (post.id === id)))
   }
 
   // Favorite posts
