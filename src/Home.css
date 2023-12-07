@@ -1,6 +1,6 @@
 .Home .main-content, .Home .sidebar-content, .Home .comments-section {
-    min-height: 500px; /* Adjust this value as needed */
-    /* rest of your styles... */
+    min-height: 500px;
+    font-family: 'Mountains of Christmas', cursive;
 }
 
 .Home {
@@ -30,6 +30,7 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    overflow: hidden;
 }
 
 @keyframes snowfall {
@@ -60,14 +61,120 @@
     gap: 10px;
 }
 .Home .post-container {
+    background-color: #f8e8e8;
+    border: 1px solid #005f30;
     display: flex;
     justify-content: space-between;
 }
 
 .Home .post-content {
-    
     flex-grow: 1;
 }
+
 .Home .button-container {
     text-align: right;
 }
+
+.Home .sidebar-content {
+    background-color: #f8e8e8;
+    border: 1px solid #005f30;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    color: #333;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.favorite-button {
+    background-color: #3d8b37;
+    color: #f8e8e8;
+    border: 2px solid #f8e8e8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.favorite-button:hover {
+    background-color: #2f6b2c;
+    transform: scale(1.05);
+}
+
+.favorite-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3d8b37;
+}
+
+.favorite-button .fa-heart {
+    color: #ffd700;
+}
+
+
+.favorite-button svg {
+    width: 20px;
+    height: auto;
+}
+
+.comments-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8e8e8;
+    border: 1px solid #005f30;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.comments-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comments-form input[type='text'],
+.comments-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d3a5a5;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.comments-form textarea {
+    height: 120px;
+}
+
+.submit-button {
+    background-color: #3d8b37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.submit-button:hover {
+    background-color: #2f6b2c;
+    transform: scale(1.05);
+}
+

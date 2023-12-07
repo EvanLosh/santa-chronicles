@@ -38,6 +38,11 @@ function CommentsForm({ postId, posts, setPosts }) {
             .then((newComment) => {
                 console.log(newComment)
                 setPosts([...posts.filter(post => post.id !== updatedPost.id), updatedPost])
+                // clear input field after submission
+                setFormData({
+                    name: '', 
+                    comment: '' 
+                })
             })
             .catch((error) => console.error('Error adding new comment', error))
     }
@@ -51,7 +56,7 @@ function CommentsForm({ postId, posts, setPosts }) {
     }
 
     return (
-        <div>
+        <div className='comments-form'>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='title'>Name</label>
                 <br></br> {/* line breaks to improve page layout */}
@@ -61,7 +66,7 @@ function CommentsForm({ postId, posts, setPosts }) {
                 <br></br>
                 <textarea id='comment' name='comment' value={formData.comment} onChange={handleInputChange} />
                 <br></br>
-                <button type='submit'>Submit</button>
+                <button type='submit' className='submit-button'>Submit</button>
             </form>
         </div>
     )
