@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import './NewPostForm.css';
+
 // import { v4 as uuidv4 } from 'uuid'
 
 function NewPostForm({ setPosts, posts }) {

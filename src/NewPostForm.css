@@ -1,0 +1,49 @@
+.NewPostForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8e8e8; /* Light pink background */
+    border: 1px solid #005f30; /* Dark green border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 30px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.NewPostForm label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Dark text for contrast */
+}
+
+.NewPostForm input[type='text'],
+.NewPostForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d3a5a5; /* Light pink border */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.NewPostForm textarea {
+    height: 150px; /* Larger text area for content */
+}
+
+.NewPostForm .submit-button {
+    background-color: #3d8b37; /* Dark green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.NewPostForm .submit-button:hover {
+    background-color: #2f6b2c; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
