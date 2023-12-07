@@ -5,11 +5,9 @@ import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
 import Comments from './Comments';
 
 function SelectedPost({ post, toggleFavorite, posts, setPosts }) {
-const [isFavorite, setIsFavorite] = useState(post.favorite)
-
-const handleFavoriteClick = () => {
-    toggleFavorite(post)
-}
+    const handleFavoriteClick = () => {
+        toggleFavorite(post)
+    }
     return (
         <div className="post-container">
             <div className="post-content">
@@ -27,5 +25,6 @@ const handleFavoriteClick = () => {
         </div>
     )
 }
+
 
 export default SelectedPost

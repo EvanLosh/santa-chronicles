@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Sidebar({ posts, displayPost }) {
-    const latestPosts = [...posts].slice(-3)
+    const latestPosts = [...posts].slice(-5)
 
     function handleClick(id) {
         displayPost(id)

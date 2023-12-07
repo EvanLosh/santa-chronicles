@@ -52,20 +52,28 @@ function App() {
     let index = posts.map(post => post.id).indexOf(id)
     setSelectedPost(posts[index])
   }
+
   const toggleFavorite = (post) => {
     const updatedPosts = posts.map((currentPost) => {
       if (currentPost.id === post.id) {
         return {
           ...currentPost,
           favorite: !currentPost.favorite
-        }
+        };
       } else {
         return currentPost
       }
     })
-  
+
     setPosts(updatedPosts)
-  }
+
+    if (selectedPost.id === post.id) {
+      setSelectedPost({
+        ...post, 
+        favorite: !post.favorite 
+      })
+    }
+}
 
 
 
@@ -74,7 +82,7 @@ function App() {
     {
       path: "/",
       // Props to Home get passed here
-      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite} setPosts={setPosts}/>
+      element: <Home posts={posts} selectedPost={selectedPost} displayPost={displayPost} toggleFavorite={toggleFavorite} setPosts={setPosts} />
     },
     {
       path: "/about",
@@ -84,12 +92,12 @@ function App() {
     {
       path: "/new-post-form",
       // Props to NewPostForm get passed here
-      element: <NewPostForm onAddNewPost={addNewPost} setPosts={setPosts} posts={posts} />
+      element: <NewPostForm setPosts={setPosts} posts={posts} />
     },
     {
       path: "/history",
       // Props to History get passed here
-      element: <History posts={posts} displayPost={displayPost} />
+      element: <History posts={posts} displayPost={displayPost} toggleFavorite={toggleFavorite}/>
     }
   ]);
 

@@ -68,7 +68,8 @@
           "name": "Twinkle",
           "comment": "We're so excited, Santa! Can't wait for Christmas!"
         }
-      ]
+      ],
+      "favorite": false
     },
     {
       "id": 6,
@@ -82,7 +83,8 @@
           "name": "Comet",
           "comment": "Thanks, Santa! I've been training all year for the race."
         }
-      ]
+      ],
+      "favorite": true
     },
     {
       "id": 7,
@@ -96,17 +98,8 @@
           "name": "Mrs. Claus",
           "comment": "I'm glad you like the cookies, Santa! I'll make sure to bake extra gingerbread ones for you."
         }
-      ]
-    },
-    {
-      "title": "Embracing the Magic of Christmas",
-      "body": "As I prepare for my annual journey on Christmas Eve, I can't help but feel a warmth in my heart that can only be described as pure magic. The holiday season is a time when joy dances through the air, and the spirit of giving becomes the melody that brings us all together.",
-      "id": 8
-    },
-    {
-      "title": "Journeying from the North Pole",
-      "body": "From my cozy workshop at the North Pole, where the elves work their merry magic, to the iconic sleigh ride powered by my trusty reindeer, Christmas preparations are in full swing. The excitement builds as we gear up to embark on a global adventure, bringing smiles and happiness to children far and wide.",
-      "id": 9
+      ],
+      "favorite": false
     }
   ]
 }
