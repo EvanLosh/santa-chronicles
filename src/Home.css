@@ -12,7 +12,7 @@
     align-items: center;
     width: 100%;
     margin-top: 30px;
-    background-color: #f0f0f0;
+    background-color: #f0f0f000;
     padding: 20px;
 }
 
@@ -28,11 +28,12 @@
 .Home .sidebar-content div {
     position: relative;
     padding-left: 20px;
+    padding-right: 20px;
     flex: 1;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* padding: 20px; */
     overflow: hidden;
 }
 

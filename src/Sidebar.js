@@ -16,6 +16,7 @@ function Sidebar({ posts, displayPost }) {
 
     return (
         <div className="Sidebar">
+            <h3 className="bold">Latest posts</h3>
             {titles}
         </div>
     );

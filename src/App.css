@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+p {
+  font-size: 1.333em;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -9,7 +13,8 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: #e6f2ff;
+  background: url(/src/images/ChristmasBackground.jpg);
+  /* background-color: #e6f2ff; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   justify-content: space-between;
