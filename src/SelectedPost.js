@@ -11,10 +11,10 @@ function SelectedPost({ post, toggleFavorite, posts, setPosts }) {
     return (
         <div className="post-container">
             <div className="post-content">
-                <h1>{post.title}</h1>
-                <h2>{post.date}</h2>
-                <p>{post.body}</p>
-                <Comments comments={post.comments} postId={post.id} posts={posts} setPosts={setPosts}/>
+                <h1 className="submissions">{post.title}</h1>
+                <h2 className="submissions">{post.date}</h2>
+                <p className="submissions">{post.body}</p>
+                <Comments comments={post.comments} postId={post.id} posts={posts} setPosts={setPosts} />
                 <div className="button-container">
                     <button className="favorite-button" onClick={handleFavoriteClick}>
                         <FontAwesomeIcon icon={post.favorite ? solidHeart : regularHeart} />

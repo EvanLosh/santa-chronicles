@@ -39,17 +39,17 @@ function NewPostForm({ setPosts, posts }) {
         <div className='NewPostForm'>
             <h2>Create New Post</h2>
             <form onSubmit={handleSubmit}>
-                <label htmlFor='title'>Title:</label>
+                <label htmlFor='title' className='bold'>Title</label>
                 <br></br> {/* line breaks to improve page layout */}
-                <textarea type='text' id='new-post-title' name='title' value={formData.title} onChange={handleInputChange} />
+                <textarea type='text' id='new-post-title' name='title' value={formData.title} onChange={handleInputChange} className="submissions" />
                 <br></br>
-                <label htmlFor='body'>Body:</label>
+                <label htmlFor='body' className='bold'>Body</label>
                 <br></br>
-                <textarea id='new-post-body' name='body' value={formData.body} onChange={handleInputChange} />
+                <textarea id='new-post-body' name='body' value={formData.body} onChange={handleInputChange} className="submissions" />
                 <br></br>
                 <button type='submit'>Submit</button>
             </form>
-        </div>
+        </div >
     )
 }
 

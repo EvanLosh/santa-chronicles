@@ -26,14 +26,14 @@ function History({ posts, displayPost }) {
             <SearchBar onSearch={handleSearch} />
             {searchTerm ? (
                 filteredPosts.reverse().map((post) => (
-                    <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item'>
+                    <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item submissions'>
                         <p>{post.date}</p>
                         <h3> {post.title} </h3>
                     </div>
                 ))
             ) : (
                 posts && posts.reverse().map((post) => (
-                    <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item'>
+                    <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item submissions'>
                         <p>{post.date}</p>
                         <h3> {post.title} </h3>
                     </div>

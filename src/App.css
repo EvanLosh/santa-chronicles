@@ -13,10 +13,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   justify-content: space-between;
+  min-height: 100%;
 }
 
 .nav-bar {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +85,16 @@
   flex: 1;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.dates {
+  color: #333333a1;
+}
+
 .submissions {
-  font-family: 'Stylish';
+  font-family: monospace;
 }
 
 .Comments {

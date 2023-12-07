@@ -5,7 +5,7 @@ function About() {
 
     // Santa introduces himself to site visitors
     return (
-        <div className="about-container">
+        <div className="about-container submissions">
             <div className="intro-section">
                 <h2>Ho Ho Ho! Welcome to Santa's World!</h2>
                 <img src={santaImage} alt="Santa Claus the Blogger!" />

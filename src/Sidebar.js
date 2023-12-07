@@ -8,9 +8,11 @@ function Sidebar({ posts, displayPost }) {
     }
 
     const titles = latestPosts.map(post =>
-        <p key={post.id} onClick={() => handleClick(post.id)}>
-            {post.title} {post.date}
-        </p>)
+        <div classname="clickable-title submissions">
+            <p key={post.id} onClick={() => handleClick(post.id)} >{post.title}</p>
+            <p className="dates">{post.date}</p>
+        </div>
+    )
 
     return (
         <div className="Sidebar">

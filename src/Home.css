@@ -6,7 +6,7 @@
 }
 
 .Home {
-    font-family: 'Hind Madurai', sans-serif;
+    /* font-family: 'Hind Madurai', sans-serif; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
     padding: 20px;
 }
 
-.Home .sidebar-content p {
+.Home .sidebar-content div {
     position: relative;
     padding-left: 20px;
     flex: 1;
@@ -112,7 +112,7 @@
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s, transform 0.3s;
-    font-family: 'Mountains of Christmas', cursive;
+    /* font-family: 'Tangerine', sans-serif; */
 }
 
 .favorite-button:hover {
