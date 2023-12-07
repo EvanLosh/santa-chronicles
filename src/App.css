@@ -51,6 +51,16 @@ p {
   margin-top: 30px;
 }
 
+#history {
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: black;
+  background-color: #fff6f6;
+  float: center;
+}
+
 .Header {
   width: 100%;
   background-color: #3d8b37;
