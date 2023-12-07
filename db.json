@@ -1,116 +1,102 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "date": "12-24-2023",
-        "title": "Weather Forecast for Christmas Eve",
-        "body": "Ho ho ho! Santa here with a quick weather update for Christmas Eve. There's a snowy blizzard on the horizon in Chicago and gusty winds in the northeast. But fear not, my dear friends! The reindeer team and I are well-prepared for any weather. We'll take extra care navigating through the blizzard—safety is our top priority. And remember, a little snow only adds to the magic of Christmas! We'll make sure every present gets delivered on time, come rain, snow, or shine. Keep your eyes on the sky and listen for the jingle of sleigh bells!",
-        "comments": [
-          {
-            "id": 1,
-            "date": "12-24-2023",
-            "name": "Frosty",
-            "comment": "Don't forget to bring a thermos with hot chocolate tonight!"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "date": "12-23-2023",
-        "title": "Last Minute Preparations",
-        "body": "Hello from the bustling North Pole! It's the day before Christmas, and excitement fills the air. The workshop is alive with the sounds of elves busily wrapping the last of the gifts. I'm here double-checking the sleigh's magic meter and the reindeer's harnesses. Rudolph's nose is glowing brighter than ever, signaling we're ready for our big night. I can hardly wait to soar across the sky, delivering joy and presents to all the good children around the world. Remember, Christmas magic is made with love and a little elf craft!",
-        "comments": [
-          {
-            "id": 2,
-            "date": "12-23-2023",
-            "name": "Elfred",
-            "comment": "We're all set and ready to go, Santa!"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "date": "12-22-2023",
-        "title": "North Pole Weather Update",
-        "body": "Brrr, it's a frosty -30 degrees here at the North Pole today. Perfect toy-making weather! The elves are snug and warm in the workshop, crafting toys with cheer. I've just bundled up in my coziest coat to go feed the reindeer their special pre-flight meal. It's important they have all the energy they need for Christmas Eve. Despite the chill, our spirits are warm with the joy of the season. Stay cozy, and remember, a warm heart keeps the cold at bay!",
-        "comments": [
-          {
-            "id": 3,
-            "date": "12-22-2023",
-            "name": "Snowflake",
-            "comment": "Stay warm, Santa! We're working hard to get all the toys ready!"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "date": "12-21-2023",
-        "title": "Elf of the Month",
-        "body": "I'm thrilled to announce Jingle as our Elf of the Month! Jingle has shown outstanding dedication, working tirelessly to ensure every toy is crafted to perfection. His creativity and hard work have inspired us all here at the North Pole. Keep up the fantastic work, Jingle! Your enthusiasm brings extra sparkle to our workshop. Elves like Jingle remind us that the true spirit of Christmas lies in giving our best in everything we do.",
-        "comments": [
-          {
-            "id": 4,
-            "date": "12-21-2023",
-            "name": "Jingle",
-            "comment": "Thank you, Santa! I'm honored to be the Elf of the Month!"
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "date": "12-20-2023",
-        "title": "Christmas Countdown",
-        "body": "Only 5 more days until Christmas, and the excitement here is palpable! The North Pole is a flurry of festive activity. Elves are adding the final sparkles to the toys, and I'm busy reviewing my list for the last time - checking it twice, of course! Remember, it's never too late to spread kindness and joy. Let's make these last few days count by being extra nice to one another. The Christmas spirit is all about love, sharing, and a dash of elfish mischief!",
-        "comments": [
-          {
-            "id": 5,
-            "date": "12-20-2023",
-            "name": "Twinkle",
-            "comment": "We're so excited, Santa! Can't wait for Christmas!"
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "date": "12-19-2023",
-        "title": "Reindeer Games",
-        "body": "What a fantastic day at the North Pole with our annual Reindeer Games! The reindeer showed their incredible skills and speed, with Comet clinching the title in the speed race this year. It's heartwarming to see them so energetic and ready for our big journey. Their health and happiness are essential for our Christmas Eve flight. Cheers to all our reindeer for their amazing performance today. They truly are the unsung heroes of Christmas!",
-        "comments": [
-          {
-            "id": 6,
-            "date": "12-19-2023",
-            "name": "Comet",
-            "comment": "Thanks, Santa! I've been training all year for the race."
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "date": "12-18-2023",
-        "title": "Holiday Baking",
-        "body": "The aroma of freshly baked cookies is wafting through the North Pole, thanks to Mrs. Claus's wonderful baking skills. She's been busy preparing a variety of cookies for everyone, especially her delightful gingerbread cookies - my personal favorite! There's nothing like the sweet smell of cookies to bring comfort and joy to our home. Mrs. Claus's baking not only fills our tummies but also our hearts with love. Her gingerbread cookies are a special treat that adds to the magic of the holiday season.",
-        "comments": [
-          {
-            "id": 7,
-            "date": "12-18-2023",
-            "name": "Mrs. Claus",
-            "comment": "I'm glad you like the cookies, Santa! I'll make sure to bake extra gingerbread ones for you."
-          }
-        ]
-      },
-      {
-        "title": "This is a new post!",
-        "body": "This is the body of a new post!",
-        "date": "12/7/2023",
-        "id": 8,
-        "comments": [
-          {
-            "id": "8655ecc7-c6f0-4ea0-a09b-86e82831666c",
-            "date": "12/7/2023",
-            "name": "Mariah Carey",
-            "comment": "I don't want a lot for Christmas"
-          }
-        ]
-      }
-    ]
-  }
+  "posts": [
+    {
+      "id": 1,
+      "date": "12-24-2023",
+      "title": "Weather Forecast for Christmas Eve",
+      "body": "Ho ho ho! Santa here with a quick weather update for Christmas Eve. There's a snowy blizzard on the horizon in Chicago and gusty winds in the northeast. But fear not, my dear friends! The reindeer team and I are well-prepared for any weather. We'll take extra care navigating through the blizzard—safety is our top priority. And remember, a little snow only adds to the magic of Christmas! We'll make sure every present gets delivered on time, come rain, snow, or shine. Keep your eyes on the sky and listen for the jingle of sleigh bells!",
+      "comments": [
+        {
+          "id": 1,
+          "date": "12-24-2023",
+          "name": "Frosty",
+          "comment": "Don't forget to bring a thermos with hot chocolate tonight!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "12-23-2023",
+      "title": "Last Minute Preparations",
+      "body": "Hello from the bustling North Pole! It's the day before Christmas, and excitement fills the air. The workshop is alive with the sounds of elves busily wrapping the last of the gifts. I'm here double-checking the sleigh's magic meter and the reindeer's harnesses. Rudolph's nose is glowing brighter than ever, signaling we're ready for our big night. I can hardly wait to soar across the sky, delivering joy and presents to all the good children around the world. Remember, Christmas magic is made with love and a little elf craft!",
+      "comments": [
+        {
+          "id": 2,
+          "date": "12-23-2023",
+          "name": "Elfred",
+          "comment": "We're all set and ready to go, Santa!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "12-22-2023",
+      "title": "North Pole Weather Update",
+      "body": "Brrr, it's a frosty -30 degrees here at the North Pole today. Perfect toy-making weather! The elves are snug and warm in the workshop, crafting toys with cheer. I've just bundled up in my coziest coat to go feed the reindeer their special pre-flight meal. It's important they have all the energy they need for Christmas Eve. Despite the chill, our spirits are warm with the joy of the season. Stay cozy, and remember, a warm heart keeps the cold at bay!",
+      "comments": [
+        {
+          "id": 3,
+          "date": "12-22-2023",
+          "name": "Snowflake",
+          "comment": "Stay warm, Santa! We're working hard to get all the toys ready!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "12-21-2023",
+      "title": "Elf of the Month",
+      "body": "I'm thrilled to announce Jingle as our Elf of the Month! Jingle has shown outstanding dedication, working tirelessly to ensure every toy is crafted to perfection. His creativity and hard work have inspired us all here at the North Pole. Keep up the fantastic work, Jingle! Your enthusiasm brings extra sparkle to our workshop. Elves like Jingle remind us that the true spirit of Christmas lies in giving our best in everything we do.",
+      "comments": [
+        {
+          "id": 4,
+          "date": "12-21-2023",
+          "name": "Jingle",
+          "comment": "Thank you, Santa! I'm honored to be the Elf of the Month!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "12-20-2023",
+      "title": "Christmas Countdown",
+      "body": "Only 5 more days until Christmas, and the excitement here is palpable! The North Pole is a flurry of festive activity. Elves are adding the final sparkles to the toys, and I'm busy reviewing my list for the last time - checking it twice, of course! Remember, it's never too late to spread kindness and joy. Let's make these last few days count by being extra nice to one another. The Christmas spirit is all about love, sharing, and a dash of elfish mischief!",
+      "comments": [
+        {
+          "id": 5,
+          "date": "12-20-2023",
+          "name": "Twinkle",
+          "comment": "We're so excited, Santa! Can't wait for Christmas!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "12-19-2023",
+      "title": "Reindeer Games",
+      "body": "What a fantastic day at the North Pole with our annual Reindeer Games! The reindeer showed their incredible skills and speed, with Comet clinching the title in the speed race this year. It's heartwarming to see them so energetic and ready for our big journey. Their health and happiness are essential for our Christmas Eve flight. Cheers to all our reindeer for their amazing performance today. They truly are the unsung heroes of Christmas!",
+      "comments": [
+        {
+          "id": 6,
+          "date": "12-19-2023",
+          "name": "Comet",
+          "comment": "Thanks, Santa! I've been training all year for the race."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "12-18-2023",
+      "title": "Holiday Baking",
+      "body": "The aroma of freshly baked cookies is wafting through the North Pole, thanks to Mrs. Claus's wonderful baking skills. She's been busy preparing a variety of cookies for everyone, especially her delightful gingerbread cookies - my personal favorite! There's nothing like the sweet smell of cookies to bring comfort and joy to our home. Mrs. Claus's baking not only fills our tummies but also our hearts with love. Her gingerbread cookies are a special treat that adds to the magic of the holiday season.",
+      "comments": [
+        {
+          "id": 7,
+          "date": "12-18-2023",
+          "name": "Mrs. Claus",
+          "comment": "I'm glad you like the cookies, Santa! I'll make sure to bake extra gingerbread ones for you."
+        }
+      ]
+    }
+  ]
+}
