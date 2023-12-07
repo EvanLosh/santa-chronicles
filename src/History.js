@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import SearchBar from './SearchBar';
+import './History.css';
 
 function History({ posts, displayPost }) {
 
