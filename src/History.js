@@ -29,7 +29,7 @@ function History({ posts, displayPost }) {
                 filteredPosts.reverse().map((post) => (
                     <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item submissions'>
                         <p>{post.date}</p>
-                        <p className="bold"> {post.title} </p>
+                        <p className="bold clickable-title"> {post.title} </p>
                         <hr></hr>
                     </div>
                 ))
@@ -37,7 +37,7 @@ function History({ posts, displayPost }) {
                 posts && posts.reverse().map((post) => (
                     <div key={post.id} onClick={() => handleClick(post.id)} className='history-list-item submissions'>
                         <p>{post.date}</p>
-                        <p className="bold"> {post.title} </p>
+                        <p className="bold clickable-title"> {post.title} </p>
                         <hr></hr>
                     </div>
                 ))
