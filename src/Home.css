@@ -32,8 +32,14 @@
     padding: 20px;
 }
 
+@keyframes snowfall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
 .Home .sidebar-content p::before {
-    content: '❄️';
+    animation: snowfall 15s linear infinite;
+    content: url('https://www.freeiconspng.com/thumbs/snowflakes-png/white-snowflakes-png-9.png');
     position: absolute;
     left: 0;
     color: black;
@@ -59,6 +65,7 @@
 }
 
 .Home .post-content {
+    
     flex-grow: 1;
 }
 .Home .button-container {
