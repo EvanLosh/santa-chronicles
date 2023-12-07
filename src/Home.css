@@ -53,6 +53,7 @@
     position: absolute;
     left: 0;
     color: black;
+    pointer-events: none;
 }
 
 .Home .comments-section {
